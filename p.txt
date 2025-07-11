@@ -1,0 +1,53 @@
+Here’s a simple JavaScript example for your **Student Grade Tracker** requirement using plain JavaScript:
+
+```javascript
+// Array to store student grades
+let students = [];
+
+// Function to add a grade
+function addGrade(grade) {
+    students.push(grade);
+    console.log(`Grade ${grade} added.`);
+}
+
+// Function to calculate and return the average grade
+function getAverageGrade() {
+    if (students.length === 0) {
+        return 0; // Avoid division by zero
+    }
+    let total = 0;
+    for (let i = 0; i < students.length; i++) {
+        total += students[i];
+    }
+    let average = total / students.length;
+    return average;
+}
+
+// Example usage:
+addGrade(85);
+addGrade(90);
+addGrade(78);
+
+console.log("All Grades:", students);
+console.log("Average Grade:", getAverageGrade());
+```
+
+---
+
+✅ **How to Run in VS Code Terminal:**
+
+1. Save the code in a file called `gradeTracker.js`.
+2. Open VS Code terminal in that folder.
+3. Run:
+
+```bash
+node gradeTracker.js
+```
+
+---
+
+If you'd like, I can also help you add:
+
+* A user input system using `prompt` or `readline`.
+* A basic HTML+JS web version.
+  Let me know which one you'd prefer!
